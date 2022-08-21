@@ -17,8 +17,8 @@ defmodule NeosEventWeb.Router do
   scope "/", NeosEventWeb do
     pipe_through :browser
 
-    live "/messages", MessageLive.Index, :index
-    get "/", PageController, :index
+    live "/" , MessageLive.Index, :index
+    get  "/state", StateController, :state
   end
 
   # Other scopes may use custom stacks.

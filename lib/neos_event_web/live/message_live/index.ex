@@ -20,7 +20,7 @@ defmodule NeosEventWeb.MessageLive.Index do
 
   @impl true
   def handle_event("launch", %{"id" => id}, socket) do
-    IO.inspect(id)
+    NeosEvent.Worker.set(id)
     {:noreply, socket}
   end
 
