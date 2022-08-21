@@ -13,7 +13,8 @@ defmodule NeosEvent.Application do
       # Start the PubSub system
       {Phoenix.PubSub, name: NeosEvent.PubSub},
       # Start the Endpoint (http/https)
-      NeosEventWeb.Endpoint
+      NeosEventWeb.Endpoint,
+      {NeosEvent.Worker, []}
       # Start a worker by calling: NeosEvent.Worker.start_link(arg)
       # {NeosEvent.Worker, arg}
     ]
