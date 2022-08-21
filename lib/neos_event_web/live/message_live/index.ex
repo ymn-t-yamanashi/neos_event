@@ -18,4 +18,10 @@ defmodule NeosEventWeb.MessageLive.Index do
     |> assign(:message, nil)
   end
 
+  @impl true
+  def handle_event("launch", %{"id" => id}, socket) do
+    IO.inspect(id)
+    {:noreply, socket}
+  end
+
 end

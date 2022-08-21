@@ -1,1 +1,4 @@
 <h1>Listing Messages</h1>
+<%=for index <- 1..5 do %>
+<span><%= link "花火#{index}", to: "#", phx_click: "launch", phx_value_id: index %></span>
+<% end %>
