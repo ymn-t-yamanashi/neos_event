@@ -1,9 +1,12 @@
-<.h1>
-    <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
+<br>
+<.h2>
+    <span class="m-4 text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
         NeosVR Fireworks Launch
     </span>
-  </.h1>
-
+</.h2>
+<br>
 <%=for index <- 1..5 do %>
-    <.button color="primary" label={index}   phx_click="launch"  phx_value_id={index} />
+    <span class="m-4">
+        <.button color="primary" size="xl" label={index} phx_click="launch" phx_value_id={index} />
+    </span>
 <% end %>
