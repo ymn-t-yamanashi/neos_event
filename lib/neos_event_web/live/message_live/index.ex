@@ -14,7 +14,7 @@ defmodule NeosEventWeb.MessageLive.Index do
 
   defp apply_action(socket, :index, _params) do
     socket
-    |> assign(:page_title, "Listing Messages")
+    |> assign(:page_title, "launch")
     |> assign(:message, nil)
   end
 
