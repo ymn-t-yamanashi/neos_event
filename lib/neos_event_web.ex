@@ -99,6 +99,7 @@ defmodule NeosEventWeb do
       import NeosEventWeb.ErrorHelpers
       import NeosEventWeb.Gettext
       alias NeosEventWeb.Router.Helpers, as: Routes
+      use PetalComponents
     end
   end
 
