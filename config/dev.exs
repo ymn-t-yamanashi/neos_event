@@ -16,7 +16,8 @@ config :neos_event, NeosEventWeb.Endpoint,
   secret_key_base: "9qLqc3xRSk1SNf9ZUHtJ4AhRuCCU1g13zEDl4GJE79sLNeiop6ziMBeb2K9i2DUB",
   watchers: [
     # Start the esbuild watcher by calling Esbuild.install_and_run(:default, args)
-    esbuild: {Esbuild, :install_and_run, [:default, ~w(--sourcemap=inline --watch)]}
+    esbuild: {Esbuild, :install_and_run, [:default, ~w(--sourcemap=inline --watch)]},
+    tailwind: {Tailwind, :install_and_run, [:default, ~w(--watch)]}
   ]
 
 # ## SSL Support
